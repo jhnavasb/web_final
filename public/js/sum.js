@@ -12,4 +12,11 @@
         alert("funciona");
     })
 
+    $("#submit").on("click", function(){
+        var a = parseInt($('#n1').val());
+        var b = parseInt($('#n2').val());
+           var sum = a + b;
+            alert(sum);
+    })
+
 })(jQuery);
