@@ -6,10 +6,24 @@
 
 <body>
 
-  <% include ../partials/nav.ejs %>
-
-  <div>
-    Holi
+  <div class="jumbotron">
+    <h1 class="display-3">Hola!</h1>
+    <p class="lead">Esto es una sencilla aplicación que suma dos números.</p>
+    <hr class="my-4">
+    <p>Solo ingresa tus números en las casillas de abajo y oprime Sumar</p>
   </div>
+
+  <form class="form-inline">
+    <label class="sr-only" for="inlineFormInputName2">Número</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="n1" >
+
+    <label class="sr-only" for="inlineFormInputName2">Número</label>
+    <input type="number" class="form-control mb-2 mr-sm-2" id="n2" >
+  
+    <button type="button" class="btn btn-primary mb-2">Sumar</button>
+  </form>
+
+  <input class="form-control" type="text" id="out" readonly>  
+
 </body>
 </html>
